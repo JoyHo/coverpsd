@@ -1,2 +1,19 @@
-# coverpsd
-It is a chrome extension.You can cover a psd image to the page when writing pages.
+# 帮助前端重构高度还原设计稿
+
+### 目标
+帮助前端人员编写html/css的时候，高度还原设计稿（尤其是高宽、间距等问题）。
+
+### 原理
+在当前页面的最上层覆盖一张设计图(jpg/png)，以达到临摹的效果。
+
+### 功能
+1.页面添加设计图模板
+2.针对设计图进行透明、位置、显示与否、插入与否设置更改
+![Alt text](http://images2015.cnblogs.com/blog/385229/201607/385229-20160726140126403-600708753.png)
+
+### 说明
+- 这是一个chrome浏览器插件，不依赖任何的开发环境，只要有chrome浏览器就可以使用。
+- 因为提供的是源文件，所以不能直接使用，需要先打包，然后安装
+- 因为没有上传到chrome应用中心，所以关闭浏览器以后插件不能用（没办法，chrome做了限制），所以在下次打开浏览器的时候需要先删除再安装
+- 使用教程请移步 [chrome插件 —— 帮助高度还原设计稿](http://www.cnblogs.com/joyho/articles/5622760.html)
+- cover_psd_image文件夹里面是插件的源文件

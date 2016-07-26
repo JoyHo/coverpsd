@@ -1,0 +1,18 @@
+{  
+  "name": "Cover PSD Image",  
+  "version": "1.0",  
+  "manifest_version": 2,
+  "description": "cover psd image into page",  
+  "permissions": [
+    "tabs","storage","http://*/*", "https://*/*"
+  ],
+  "browser_action": {  
+    "default_icon": "icon.png" ,
+    "default_title": "cover psd",
+    "default_popup": "popup.html"
+  },
+  "content_scripts":[{
+    "matches":["<all_urls>"],
+    "js":["js/page.js"]
+  }]
+} 

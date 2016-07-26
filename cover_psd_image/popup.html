@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <title>cover psd image into page</title>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+  	<!--上传文件按钮-->
+    <input id="upload" type="file" style="margin-top:10px;margin-bottom:10px;" />
+
+    <!-- 调整透明度 -->
+    <div class="alpha">调整透明度（默认0.3）：<input id="alpha" type="range" max="100" min="0" value="30" /></div>
+
+    <!-- 调整位置 -->
+    <div class="position">
+    	<p>调整位置(默认0,0)：</p>
+    	<p>距离左边：<input id="disLeft" type="range" max="100" min="0" value="0" /></p>
+    	<p>距离顶部：<input id="disTop" type="range" max="100" min="0" value="0" /></p>
+    </div>
+
+    <!-- 是否显示 -->
+    <div class="display">
+    	<p>当前display:  <input id="disBlock" name="display" type="radio" value="block" checked>显示  <input id="disNone" name="display" type="radio" value="none">不显示</p>
+    </div>
+
+    <!-- 是否插入 -->
+    <div class="insertstatus">
+    	<p>是否插入： <input id="notInsert" name="insertornot" type="radio" value="false">以后都不要插入  <input id="insert" name="insertornot" type="radio" value="true" checked>恢复插入 </p>
+    </div>
+  </body>
+</html>
